@@ -1,0 +1,62 @@
+@import '@/styles/colors.scss';
+@import '@/styles/fonts.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+}
+
+body {
+  width: 100%;
+  position: relative;
+  background: var(--color-main-background);
+  color: var(--color-text);
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a, button {
+  background: 0;
+  color: var(--color-text);
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 10px 30px;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin-inline: auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--color-main-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-main);
+  border: 5px solid var(--color-main-background);
+  border-radius: 10rem;
+}
