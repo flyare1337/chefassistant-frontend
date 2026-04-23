@@ -34,7 +34,7 @@
             <div class="qr-scanner-info-title"><PhHandTap :size="25" /> Действия</div>
             <div class="qr-scanner-buttons">
             <button v-if="dataref.prod_id !== -1" @click="useProduct(dataref.prod_id)" class="qr-scanner-button blue"><PhKnife :size="25" />Приготовить</button>
-            <button v-if="dataref.prod_id === -1" @click="toFridge()" class="qr-scanner-button green"><PhPlusCircle :size="25" />В холодильник</button>
+            <button v-if="dataref.prod_id === -1" @click="toFridge()" class="qr-scanner-button green"><PhPlusCircle :size="25" />Добавить</button>
             <button v-if="dataref.prod_id !== -1 && dataref.type_id !== -1" @click="toBuyList()" class="qr-scanner-button purple"><PhBasket :size="25" />В список покупок</button>
             <button @click="dataref = null" class="qr-scanner-button yellow"><PhArrowCounterClockwise :size="22" />Сканировать заново</button>
             </div>
